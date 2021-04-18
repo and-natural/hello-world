@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;
+    padding:0;}/*清除浏览器自带默认的值*/
+
+html,body{height:100%;
+}/*随大浏览器缩放而缩放区域小*/
+a{
+    text-decoration: none;/*这个是设置a标签的默认状态去除下划线*/
+    /* a:visited{text-decoration: none;}    //这个是设置a标签的访问过后的状态去除下划线
+ a:hover {text-decoration: none;}    //这个是设置a标签的鼠标覆盖状态去除下划线
+ a:active{text-decoration:none;}    //这个是设置a标签的活跃状态去除下划线*/
+}
+.yemian{
+   /* background-color : rgba(11, 20, 23, 0.17);*/
+ 
+}
+.header{
+    height:60px;
+
+   /*background-color:#000;*/
+
+}
+.header_div{
+    height:60px;
+    width: 1200px;
+line-height: 70px;
+    margin: auto;
+    /*设置行高，给个等于盒子高度的大小，文字就会垂直居中显示在盒子内部；*/
+
+}
+.header_a{
+    height:60px;
+    float: right;;
+margin-top: -70px;
+    margin-right: 70px;
+    font-size: 20px;
+}
+.middle{
+    height:600px;   /*高*/
+    margin-top:30px;/*外上边距*/
+}
+.middle_inbox{
+    height:600px;
+    width:900px;
+    border: 5px solid gray;
+
+    margin: auto; /*边缘自动居中*/
+
+}
+.middle_inbox_topleft{
+    height:200px;
+    width:598px;
+    border-right: 2px solid gainsboro;
+    border-bottom:2px solid gainsboro;
+    float:left;
+}
+.middle_inbox_topright{
+    height:200px;
+    width:300px;
+    border-bottom:2px solid gainsboro;
+    float:right;
+}
+.middle_inbox_downleft{
+    height:400px;
+    width:598px;
+    border-right: 2px solid gainsboro;
+    float:left;
+}
+.middle_inbox_downright{
+    height:400px;
+    width:300px;
+    float:right;
+}
+.bean{
+    max-height:200px;
+    float:left;
+    transition: all 1s;
+}
+.bean:hover {
+    transform: translateX(450px);
+}
+.explain_01{
+  height:200px;
+    margin-top:20px;/*外上边距*/
+margin-left:160px; /*由于左边是图片，不是块级元素，所以左边边距是从最左边算起*/
+}
+.explain_01_title{
+    margin-bottom:7px;/*外上边距*/
+}
+.middle_inbox_table{
+    height:190px;
+    width:280px;
+    margin: auto; /*边缘自动居中*/
+    margin-top:10px;/*外上边距*/
+    color: #0D7114;
+    /*background-color: #00FFFF;*/
+}
+.downleft_top{
+    height:50px;
+    width:598px;
+    margin-top:15px;/*外上边距*/
+
+}
+.title2{
+    width:170px;
+    float:right;
+    background-color: #00FFFF;
+}
+.title2_langu{
+    float:right;
+    margin-right: 40px;
+}
+.input{
+    width:530px;
+    margin: auto; /*边缘自动居中*/
+
+}
+.flag{
+    margin-top: 10px;
+    height:50px;
+    text-align:center;
+
+}
+
+.foot{
+    height:150px;
+}
+
+
+

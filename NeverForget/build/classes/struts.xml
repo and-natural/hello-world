@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+<!-- 4个开发模式常用配置的简介-->
+<!-- 开启使用开发模式，详细错误提示 -->
+<constant name="struts.devMode" value="true"/>
+<!-- 指定每次请求到达，重新加载资源文件 -->
+<constant name="struts.i18n.reload" value="true"/>
+<!-- 指定每次配置文件更改后，自动重新加载 -->
+<constant name="struts.configuration.xml.reload" value="true"/>
+<!-- 指定XSLT Result使用样式表缓存 -->
+<constant name="struts.xslt.nocache" value="true"/> 
+
+<!--我想实现的功能,不依靠web.xml,在项目启动跳转默认登录网页,如果网页输入有误,跳转到error-->
+<!--即在项目启动时是登录界面,而在项目后缀输入不正确的地址,则会跳转到error  -->
+<!--刚开始 我一直用<default-action-ref name="Login" />  指定默认路径,但
+这玩意就是个坑,它确实是默认这个路径,但如果name不存在时,它同样也指定默认路径,也就是说
+项目启动时是登录界面,而如果地址错误,依旧还是跳登录界面-->
+<package name="default" namespace="/" extends="struts-default">
+<action name="" >
+<result >/jsp/IndiLogin.jsp</result>
+</action>
+<action name="login" class="com.k.action.userAction" method="execute">
+			<result name="error">/jsp/IndiLogin.jsp</result>
+			<result name="success">/jsp/IndiShow.jsp</result>
+</action>
+<action name="error" >
+			<result >/jsp/error.jsp</result>	
+		</action>		
+<action name="/*">
+        <result type="redirect">error</result>
+    </action>
+</package>
+</struts>

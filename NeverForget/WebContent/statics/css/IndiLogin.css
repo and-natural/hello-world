@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;
+    padding:0;}/*清除浏览器自带默认的值*/
+
+html,body{height:100%;}/*随浏览器缩放而缩放区域大小*/
+a{
+    text-decoration: none;/*这个是设置a标签的默认状态去除下划线*/
+    /* a:visited{text-decoration: none;}    //这个是设置a标签的访问过后的状态去除下划线
+ a:hover {text-decoration: none;}    //这个是设置a标签的鼠标覆盖状态去除下划线
+ a:active{text-decoration:none;}    //这个是设置a标签的活跃状态去除下划线*/
+}
+.head{
+
+    height: 130px;
+    background-color: #0b98ad;
+}
+.circle{
+    height:100px;
+    width: 100px;
+   /* background-color: #00bb00;*/
+    margin: auto;
+
+
+}
+.circle_img{
+    height:90px;
+    width: 90px;
+    background-color: #0c162d;
+    margin: auto;
+    border-radius:45px;/*边框圆角*/
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+}
+.body{
+    height: 400px;
+    background-color: #01a49e;
+}
+.body_content{
+    height: 240px;
+    width: 330px;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,.15);
+background-color: white;
+    border-radius:5px;/*边框圆角*/
+    margin-top: 20px;
+}
+
+input[type="text"],input[type="password"]{
+    width: 19em;
+    height: 1.9em;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    padding-left: 1em;
+    margin-left: 29px;
+
+}
+.label_1{
+line-height:50px;
+    margin-left: 29px;
+}
+.label-link{
+    float: right;
+    margin-right: 36px;
+    font-size: 15px;
+
+}
+input[type="submit"]{
+    width: 19.5em;
+    height: 2.1em;
+    margin-top: 25px;
+    background-color: #1db34f;
+    margin-left: 32px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius:5px;/*边框圆角*/
+}
+.login-callout{
+    width: 330px;
+    height: 45px;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: white;
+    border-radius:5px;/*边框圆角*/
+    margin-top: 20px;
+    line-height: 45px;/*行高与外层元素高度相同时，水平居中*/
+    text-align: center;
+    font-size :13px;
+}
+.foot{
+    height:134px;
+
+
+    background-color: #01a49e;
+}
+.nav{
+
+    width: 330px;
+    margin: auto;
+/*  background-color:#9c2400;*/
+    line-height: 80px;
+}
+.foot_ul{
+
+    width: 330px;
+
+   /* margin-left:10px;*/
+/*   background-color: #9a5f38;*/
+
+}
+.ul_a{
+    display:inline-block;
+    width:30px;
+
+    box-sizing:border-box;
+    color:#666;
+    text-align:center;
+    margin-left: 25px;
+    font-size :13px;
+}
